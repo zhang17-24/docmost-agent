@@ -1,13 +1,18 @@
 <div align="center">
-    <h1><b>Docmost</b></h1>
+    <h1><b>Docmost Agent</b></h1>
     <p>
-        Open-source collaborative wiki and documentation software.
+        基于 <a href="https://github.com/docmost/docmost">Docmost</a> 的社区版二次开发（fork）。
         <br />
-        <a href="https://docmost.com"><strong>Website</strong></a> | 
-        <a href="https://docmost.com/docs"><strong>Documentation</strong></a> |
-        <a href="https://twitter.com/DocmostHQ"><strong>Twitter / X</strong></a>
+        <a href="https://docmost.com"><strong>Docmost 官网</strong></a> | 
+        <a href="https://github.com/docmost/docmost"><strong>上游仓库</strong></a>
     </p>
 </div>
+
+> **⚠️ 社区版说明**：本项目从 [Docmost](https://github.com/docmost/docmost)（AGPL-3.0）fork 而来，
+> 已**剔除全部企业版代码**（`apps/server/src/ee`、`apps/client/src/ee`、`packages/ee`），
+> 只保留 AGPL-3.0 开源核心功能，并在此基础上进行二次开发（计划加入自定义 AI / Agent 能力）。
+> 企业版功能（AI、MFA、API Key、审计日志、Base 表格、模板、个人空间、SSO 等）在本仓库中**不存在**。
+
 <br />
 
 ## Getting started
@@ -36,13 +41,9 @@ To get started with Docmost, please refer to our [documentation](https://docmost
 </p>
 
 ### License
-Docmost core is licensed under the open-source AGPL 3.0 license.  
-Enterprise features are available under an enterprise license (Enterprise Edition).  
-
-All files in the following directories are licensed under the Docmost Enterprise license defined in `packages/ee/License`.
-  - apps/server/src/ee
-  - apps/client/src/ee
-  - packages/ee
+本项目核心代码来自 [Docmost](https://github.com/docmost/docmost)，基于 **AGPL-3.0** 协议开源。
+本仓库已移除上游的企业版代码与许可（`apps/server/src/ee`、`apps/client/src/ee`、`packages/ee`）。
+如果你使用了本项目并对外提供网络服务，请遵循 AGPL-3.0 第 13 条向用户提供对应源码。
 
 ### Contributing
 
